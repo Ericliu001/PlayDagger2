@@ -1,7 +1,7 @@
 package com.example.ericliu.playdagger2.component;
 
 import com.example.ericliu.playdagger2.MainActivity;
-import com.example.ericliu.playdagger2.module.StubModule;
+import com.example.ericliu.playdagger2.module.RepoModule;
 
 import javax.inject.Singleton;
 
@@ -12,7 +12,7 @@ import dagger.Component;
  */
 
 @Singleton
-@Component(modules = StubModule.class )
+@Component(modules = RepoModule.class )
 public interface RepoComponent {
     void inject(MainActivity mainActivity);
 }
